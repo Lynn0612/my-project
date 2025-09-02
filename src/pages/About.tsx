@@ -1,5 +1,6 @@
-import React, { useRef } from "react";
+import  { useRef } from "react";
 import { motion, useInView } from "framer-motion";
+import headshot from "../img/headshot.jpg";
 
 export default function About() {
   const ref = useRef(null);
@@ -27,7 +28,7 @@ export default function About() {
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center justify-items-center">
         {/* 左邊圖片 */}
         <motion.img
-          src="\src\img\headshot.jpg"
+          src={headshot}
           alt="demo"
           className="w-80 rounded-xl shadow-lg"
           variants={imageVariants}

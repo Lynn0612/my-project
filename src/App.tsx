@@ -5,14 +5,6 @@ import Projects from './pages/Projects'
 import Experience from './pages/Experience'
 import MouseGlow from './component/mouseglow/MouseGlow'
 
-interface CardData {
-  id: number;
-  imageSrc: string;
-  frontText: string;
-  backText: string;
-  link: string;
-}
-
 function App() {
 
   

@@ -1,13 +1,14 @@
 {
   "name": "my-project",
-  "private": true,
   "version": "0.0.0",
-  "type": "module",
+  "private": true,
+  "homepage": "https://lynn0612.github.io/my-project",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
