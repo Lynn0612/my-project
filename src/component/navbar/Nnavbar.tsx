@@ -50,7 +50,7 @@ const Navbar = () => {
       {/* 手機版 Navbar */}
       <div className="fixed md:hidden bg-gray-500 backdrop-blur-md bg-opacity-60 text-white shadow-lg z-50 top-5 left-5 right-5 rounded-2xl">
         <div className="flex justify-between items-center py-3 px-6">
-          <div className="text-xl font-bold">Logo</div>
+          <div className="text-xl font-bold">Menu</div>
 
           {/* 漢堡選單按鈕 */}
           <button

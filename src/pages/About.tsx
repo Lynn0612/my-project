@@ -1,4 +1,4 @@
-import  { useRef } from "react";
+import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import headshot from "../img/headshot.jpg";
 
@@ -30,7 +30,7 @@ export default function About() {
         <motion.img
           src={headshot}
           alt="demo"
-          className="w-80 rounded-xl shadow-lg"
+          className="w-80 rounded-xl shadow-lg mt-3"
           variants={imageVariants}
           initial="hidden"
           animate={isInView ? "visible" : "exit"}
@@ -45,7 +45,9 @@ export default function About() {
           animate={isInView ? "visible" : "exit"}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-3xl font-bold mb-4 text-gray-900 pl-4">自傳</h2>
+          <h2 className="text-3xl font-bold mb-4 text-gray-900 text-center md:pl-4">
+            自傳
+          </h2>
           <p className="text-lg text-gray-700 m-4">
             您好，我是政琳，我的個性是能靜能動的並喜歡嘗試學習各種事物，處事態度是很積極並謹慎總希望能把事情做到最完美。
             <br /><br />
