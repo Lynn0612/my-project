@@ -84,7 +84,7 @@ export default function Projects() {
   };
 
   return (
-    <div id="projects" className="bg-gray-700 text-white py-12 px-6 relative">
+    <div id="projects" className="bg-black text-white py-12 px-6 relative">
       <h2 className="text-2xl font-bold text-center mb-8">My Projects</h2>
 
       {/* 卡片容器 */}
