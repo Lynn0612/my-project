@@ -4,9 +4,12 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import cirousVideo from "../img/cirous.mp4";
 import mitacVideo from "../img/mitac.mp4";
 import iiiVideo from "../img/iii.mp4";
+import agent from "../img/agent.mp4";
+import bookkeeping from "../img/bookkeeping.mp4";
 import finshellpayImg from "../img/finshellpay.png";
 import finshellpaybackImg from "../img/finshellpayback.png";
 import growhizImg from "../img/growhiz.png";
+import { a, b } from "framer-motion/client";
 
 interface CardData {
   id: number;
@@ -65,8 +68,24 @@ export default function Projects() {
     frontText: "React｜TypeScript｜GitHub｜Jira｜Figma｜RWD｜Tailwind CSS｜Vite",
     backText: "FinShell Pay 官方網站/n負責前端開發與維護，使用 React + TypeScript，優化RWD響應式設計，確保桌機與手機端操作流暢，並整合 API 動態載入金融產品與合作夥伴資訊。",
     link: "https://www.finshellpay.com/",
-    isVideo: false, // 這是圖片
+    isVideo: true,
   },
+  {
+    id: 7,
+    mediaSrc: bookkeeping,
+    frontText: "React｜Next.js｜cursor｜Supabase｜Vercel｜GitHub｜LINE Messaging API｜Chart.js｜stitch",
+    backText: "開發多人協作記帳網站，收支管理與資料分析功能。使用Vibe Coding/React/Next.js建構前端介面，Supabase作為後端資料庫與認證服務，部署於Vercel並GitHub Actions建立CI/CD自動化流程。\n\n主要功能開發：LINE Login與訪客登入機制，支援多人共同記帳與帳本管理。提供收支圖表視覺化分析並可自訂類別。整合LINE Messaging API提供通知功能。支援日期範圍匯出Excel報表，建立財經新聞資訊頁面，掌握個人財務與市場資訊。",
+    link: "https://accounting-git-feature-ai-financial-lynn0612s-projects.vercel.app/",
+    isVideo: true
+  },
+  {
+    id: 8,
+    mediaSrc: agent, 
+    frontText: "FastAPI｜Python｜cursor｜Supabase｜Ollama｜Llama3｜RAG｜AI Agent｜RESTful API",
+    backText: "開發 AI 智能記帳與財務分析系統，使用Vibe Coding 整合本地端 LLM 模型與資料庫，提供自然語言記帳與財務分析功能。\n\n主要功能開發：透過 FastAPI 建立 AI 服務 API，整合 Supabase 資料庫與 Ollama 本地 LLM 模型。實作 RAG（Retrieval-Augmented Generation）架構，讓 AI 能根據使用者的記帳資料進行分析與回覆。開發 AI Agent，讓使用者可以透過自然語言新增、刪除交易或進行財務查詢，並將結果自動寫入資料庫。",
+    link: "https://github.com/Lynn0612/accounting/tree/feature/ai-financial",
+    isVideo: true
+  }
   ];
 
   const scrollRef = useRef<HTMLDivElement>(null);
