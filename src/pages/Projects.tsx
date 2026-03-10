@@ -68,7 +68,7 @@ export default function Projects() {
     frontText: "React｜TypeScript｜GitHub｜Jira｜Figma｜RWD｜Tailwind CSS｜Vite",
     backText: "FinShell Pay 官方網站/n負責前端開發與維護，使用 React + TypeScript，優化RWD響應式設計，確保桌機與手機端操作流暢，並整合 API 動態載入金融產品與合作夥伴資訊。",
     link: "https://www.finshellpay.com/",
-    isVideo: true,
+    isVideo: false,
   },
   {
     id: 7,
