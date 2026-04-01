@@ -9,7 +9,6 @@ import bookkeeping from "../img/bookkeeping.mp4";
 import finshellpayImg from "../img/finshellpay.png";
 import finshellpaybackImg from "../img/finshellpayback.png";
 import growhizImg from "../img/growhiz.png";
-import { a, b } from "framer-motion/client";
 
 interface CardData {
   id: number;
